@@ -205,12 +205,7 @@ h2:hover {
     width: 50%;
 }
 
-.umrissbild {
 
-    max-width: 30%;
-   max-height: min-content;
-   min-height: min-content;
-}
 
 .row {
     flex-direction: row;
