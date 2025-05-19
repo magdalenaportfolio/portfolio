@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body {
+
+    background-color: rgb(226, 226, 226);
+}
+
+.tagspaces{
+
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    /*margin-left:20px;
+    margin-top: 30px;*/
+    padding: 20px;
+   
+    
+}
+
+.titeltext{
+    /*portfolio...*/
+
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  font-size: larger;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+.tagspace {
+    /*gibt 2 davon, eins für KATEGORIE-tags*/
+    /*background-color: rgba(255, 0, 0);*/
+    /*der hintergrund hinter den tagreihen*/
+    display: flex;
+
+    
+    margin: 10px;
+    user-select: none;
+
+}
+
+
+
+.filteroptionen {
+    color: rgb(0, 0, 0);
+}
+
+
+.tag {
+    height: 20px;
+
+    padding: 10px;
+    /*background-color: rgb(201,201,201);*/
+
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+    
+}
+
+.tag:hover {
+
+    color: white;
+    border-color: rgba(0, 0, 0);
+    cursor: pointer;
+    /*border-radius: 50px;*/
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+h2{
+    /*projekte filtern */
+    color: rgb(0, 0, 0);
+    width: 180px;
+
+
+}
+
+h2:hover {
+    color: rgb(44, 44, 44);
+    cursor: pointer;
+}
+
+
+.projectspace {
+    display: flex;
+
+
+    flex-wrap: wrap;
+
+   max-width: 1400px;
+    /*a cause de responsive-ness: bei übergroßem bildschirm sollen nicht alle projekte in einer reihe sein*/
+   
+
+
+    margin: 20px;
+    padding: 10px;
+   
+
+}
+
+.projekt {
+
+    align-content: last baseline;
+    /* vertikale ausrichtung*/
+    /*justify-content: center;*/
+    text-align: center;
+
+    width: 305px;
+    height: 400px;
+
+    padding: 5px;
+    padding-bottom: 15px;
+    border-radius: 3px;
+    
+}
+
+
+.projekt:hover {
+    background-color: rgb(201, 201, 201);
+    /*font-size: larger;*/
+
+    /* scale: 1.05;*/
+    /*background-size: 200%;*/
+cursor: pointer;
+}
+/*
+#keulen {
+    background-image: url("../images/keulen.jpg");
+}
+
+#uhr {
+    background-image: url("../images/rad.png");
+    background-size: 300%;
+    background-position: -5px -70px;
+}*/
+
+#soundvis {
+    background-image: url("../images/soundvis.png");
+    background-size: 200%;
+    background-position: -35px -10px;
+    color: white;
+}
+
+/*
+#adventskalender{
+    background-image: url("../images/adventskalender.png");
+    background-size: 150%;
+}*/
+
+#interaktionsdiagramme {
+    background-image: url("../images/interaktionsdiagramme.png");
+    background-size: 210%;
+    background-position: -165px -40px;
+
+}
+
+#abc {
+    background-image: url("../images/abc.JPG");
+
+    background-position: -35px -48px;
+    color: white;
+
+}
+
+
+.bild {
+    background-image: url("../images/abc.JPG");
+    
+}
+
+.gesProjekt{
+    /*background-color: rgba(48, 172, 65, 0.89);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(109, 109, 109,0);
+
+}
+
+
+
+.bildbereich {
+
+    align-content: center;
+    border-radius: 0px;
+    /*background-color: rgb(255, 87, 87);*/
+    margin-bottom: 5px;
+    /*background-image: url("../images/keulen.jpg");
+    background-position-y:top;
+    background-position-x: left;*/
+    width: 280px;
+    height: 280px;
+}
+
+
+.titel {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    /*text-indent: 5px;*/
+    margin-left: 5px;
+    /*background-color: rgb(255, 173, 173);*/
+    width: 280px;
+    height: auto;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.satz {
+
+    text-align: left;
+    /*text-indent: 5px;*/
+    margin-left: 5px;
+    /*background-color: rgb(255, 237, 237);*/
+    width: 280px;
+    height: auto;
+}
+
+.bildbereich{
+    background-size: 100%;
+    transition: 0.2s;
+    border: 1px solid rgb(167, 167, 167);
+}
+
+
+
+.mittig{
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+}
+
+.unterstrichen{
+    border-bottom: 2px solid black;
+}
+.flex{
+display: flex;
+justify-content: center;
+}
+.aboutflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.infotextcontainer{
+    
+    width: 50%;
+}
+.umrissbild{
+   width: 30%;
+    height: min-content;
+}
+.row{
+    flex-direction: row;
+}
+li{
+    margin-left: 25px;
+}
+.infotext{
+    
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+    padding: 10px;
+}
+.abstand_r{
+    margin-right: 10px;
+}
+.container_tag_unterseite{
+    margin: 30px 30px 5px 30px;
+    padding: 20px;
+    
+
+}
+.unterseiten_tag_black{
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    margin: 5px;
+}
+.unterseiten_tag_white{
+    color: rgb(0, 0, 0);
+    
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin: 5px;
+    width: 110px;
+    text-align: center;
+   
+    
+}
+
+.mittelspalte{
+    margin: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.text_unterseite{
+    text-align:start;
+    margin: 0 12%;
+}
+.grosser{
+    
+    
+    padding: 5px 11px;
+    margin-bottom:5px;
+  font-size: x-large;
+ 
+}
+
+
+.zuruckbutton{
+    
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+
+
+.kl_c{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.pfeil{
+    width: 20px;
+}
