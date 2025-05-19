@@ -208,8 +208,8 @@ h2:hover {
 .umrissbild {
 
     max-width: 30%;
-    height: min-content;
-   
+   max-height: min-content;
+   min-height: min-content;
 }
 
 .row {
